@@ -541,6 +541,7 @@ h2 {
     padding: 4rem 0;
     .container{
         gap: 2rem;
+        justify-content: space-between;
     }
     .box{
         width: 70%;
@@ -558,7 +559,6 @@ h2 {
         gap: 1rem;
         .fact-box{
             width: 48%;
-
             display: flex;
             gap: 0.5rem;
             .ftext{
@@ -593,6 +593,7 @@ h2 {
         justify-content: space-between;
         .cc{
             width: 100%;
+            border-radius: 5px;
             height: 49%;
             color: #fff;
             text-align: center;
@@ -601,6 +602,34 @@ h2 {
             padding: 4rem 2rem;
             img{
                 margin-bottom: 2rem;
+            }
+        }
+    }
+}
+
+#reviews{
+    p:first-child{
+        text-align: center;
+        margin: var(--mtb30);
+    }
+    .reviews-block{
+        display: flex;
+        gap: 1rem;
+        .review{
+            *{
+                margin-bottom: 1rem;
+            }
+            background: var(--greenText);
+            padding: 4rem 2rem;
+            color: #fff;
+            border-radius: 5px;
+            width: 33%;
+            p:last-child{
+                color: var(--grayText);
+            }
+            h5{
+                font-size: 1.25rem;
+                text-transform: uppercase;
             }
         }
     }
