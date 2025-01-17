@@ -75,6 +75,19 @@ body {
     background-color: var(--bg);
 }
 
+.card{
+    h4{
+        margin: 1rem 0;
+    }
+    h5{
+        margin: 1rem 0;
+        font-weight: 900;
+        font-size: 1.5rem;
+        color: var(--greenText);
+        text-transform: uppercase;
+    }
+}
+
 header {
     height: 80vh;
     width: 100%;
@@ -394,6 +407,7 @@ h2 {
     }
     .card{
         width: 49% !important;
+
     }
 }
 
@@ -633,6 +647,13 @@ h2 {
             }
         }
     }
+}
+
+footer{
+    width: 100%;
+    height: 600px;
+
+    background-image: url('assets/footer-bg.png');
 }
 
 
