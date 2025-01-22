@@ -150,6 +150,7 @@ header {
     width: 100%;
     background-image: url("assets/bg.png");
     background-size: cover;
+    background-position: center;
 
     .head {
         position: relative;
@@ -737,4 +738,972 @@ section {
     width: 100%;
     scroll-snap-align: start;
 }
+
+
+
+
+
+
+.info-section {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-card {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.info-background img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+.info-content {
+    position: absolute;
+    top: 0%;
+    text-align: center;
+    color: white;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.5); /* Overlay background */
+    border-radius: 8px;
+}
+
+.info-content h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.info-content p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.info-button {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.2); /* Light button background */
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.info-button:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+
+.slider {
+    overflow: hidden;
+    position: relative;
+    max-width: 100%;
+    padding: 50px 200px;
+}
+
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+.passion {
+    min-width: 25%;
+    box-sizing: border-box;
+    padding: 1rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.passion .ck img {
+    max-width: 50px;
+    margin-bottom: 1rem;
+}
+
+.passion h4 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.passion p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Add navigation dots for slider */
+.slider-dots {
+    display: none;
+    justify-content: center;
+    margin-top: 1rem;
+    
+}
+
+.slider-dots button {
+    width: 70px;
+    height: 4px;
+    background-color: gray;
+    border: none;
+    border-radius: 0%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.slider-dots .active {
+    background-color: white;
+}
+.slides1{
+    display: flex;
+    gap: 20px;
+
+}
+
+/* Slider container */
+.custom-slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+/* Slides container */
+.custom-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Individual slide (card) */
+.custom-card {
+    flex: 0 0 100%;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+/* Dots container */
+.custom-slider-dots {
+    display: none;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* Individual dot */
+.custom-slider-dots button {
+    background: #ccc;
+    border: none;
+     width: 70px;
+    height: 4px;
+    margin: 0 5px;
+    border-radius: ;
+    cursor: pointer;
+    outline: none;
+    transition: background 0.3s;
+}
+
+/* Active dot */
+.custom-slider-dots button.active {
+    background: #000;
+}
+/* General Styles for the Card */
+.custom-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #e6e6e6; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 100%; /* Full width */
+    max-width: 350px; /* Maximum width for the card */
+    margin: 20px auto; /* Centering the card */
+    background-color: #fff; /* White background */
+    font-family: 'Arial', sans-serif; /* Use a clean sans-serif font */
+}
+
+/* Top Icon */
+.custom-card img {
+    
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Title */
+.custom-card h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333; /* Dark gray */
+    margin-bottom: 8px; /* Space below the title */
+}
+
+/* Price */
+.custom-card h5 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4caf50; /* Green color */
+    margin-bottom: 12px; /* Space below the price */
+}
+
+/* Description */
+.custom-card p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666; /* Medium gray */
+    margin-bottom: 20px; /* Space below the text */
+}
+
+/* Button Wrapper */
+.custom-btn-wrap {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Button Styles */
+.custom-contact-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    border: 2px solid #333; /* Black border */
+    border-radius: 4px;
+    background-color: transparent; /* Transparent background */
+    font-size: 14px;
+    font-weight: bold;
+    color: #333; /* Black text */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.custom-contact-card span {
+    margin-right: 8px; /* Space between text and icon */
+}
+
+/* Button Hover Effect */
+.custom-contact-card:hover {
+    background-color: #333; /* Black background on hover */
+    color: #fff; /* White text on hover */
+}
+
+/* Container Styles */
+.new-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Slider Container */
+.new-slider {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+/* Slides Container */
+.new-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Individual Card */
+.new-card {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin: 10px;
+    max-width: 100%; /* Matches design */
+    box-sizing: border-box;
+}
+
+/* Icon */
+.new-card img {
+   
+    height: auto;
+}
+
+/* Title, Price, and Description */
+.new-card h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.new-card h5 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4caf50;
+    margin-bottom: 12px;
+}
+
+.new-card p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Button */
+.new-btn-wrap {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.new-contact-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    border: 2px solid #333;
+    border-radius: 4px;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.new-contact-card span {
+    margin-right: 8px;
+}
+
+.new-contact-card:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Navigation Dots */
+.new-slider-dots {
+    display: none;
+    justify-content: center;
+    margin-top: 10px;
+    
+}
+
+.new-slider-dots button {
+    background: #ccc;
+    border: none;
+    width: 70px;
+    height: 4px;
+    margin: 0 5px;
+    border-radius: ;
+    cursor: pointer;
+    outline: none;
+    transition: background 0.3s;
+}
+
+.new-slider-dots button.active {
+    background: #000;
+}
+
+
+
+
+
+/* General Styles */
+.slide5-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide5-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+/* Slides Container */
+.slide5-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Individual Slide/Card */
+.slide5-card {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    background-color: #fff;
+    margin: 10px;
+    max-width: 350px; /* Card max width */
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Icon Styling */
+.slide5-card img {
+    
+    height: auto;
+}
+
+/* Title */
+.slide5-card h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Price */
+.slide5-card h5 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4caf50; /* Green color */
+    margin-bottom: 15px;
+}
+
+/* Description */
+.slide5-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Button */
+.slide5-btn-wrap {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.slide5-contact-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    border: 1px solid #333; /* Thin border */
+    border-radius: 6px;
+    background-color: #fff; /* White background */
+    font-size: 14px;
+    font-weight: bold;
+    color: #333; /* Black text */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.slide5-contact-btn:hover {
+    background-color: #333; /* Black background on hover */
+    color: #fff; /* White text on hover */
+}
+
+/* Container Background and Card Alignment */
+.slide5-container {
+    padding: 20px;
+    border-radius: 12px; /* Rounded corners for container */
+}
+
+/* Dots Container */
+.slide5-dots {
+    display: none;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.slide5-dots button {
+    background: #ccc;
+    border: none;
+    width: 70px;
+    height: 4px;
+    margin: 0 5px;
+    border-radius: ;
+    cursor: pointer;
+    outline: none;
+    transition: background 0.3s;
+}
+
+.slide5-dots button.active {
+    background: #000; /* Active dot color */
+}
+
+
+/* General Styles */
+.reviews6-slider {
+    padding: 40px 20px;
+    position: relative;
+    font-family: Arial, sans-serif;
+}
+
+.reviews6-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.reviews6-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 20px;
+}
+
+/* Individual Slide */
+.reviews6-slide {
+    flex: 0 0 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #fff;
+}
+
+/* Dark Overlay */
+.reviews6-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black overlay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Content Wrapper */
+.reviews6-content {
+    text-align: left;
+    max-width: 600px;
+    color: #fff;
+}
+
+.reviews6-stars {
+    font-size: 18px;
+    color: #ffcc00; /* Star color */
+    margin-bottom: 10px;
+}
+
+.reviews6-content h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.reviews6-content p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Dots Navigation */
+.reviews6-dots {
+    display: none;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.reviews6-dots button {
+    background: #fff;
+    border: none;
+    width: 70px;
+    height: 4px;
+    margin: 0 5px;
+    border-radius: ;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.reviews6-dots button.active {
+    background: #ffcc00; /* Active dot color */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Design */
+@media (min-width: 1024px) {
+    .reviews6-slide {
+        flex: 0 0 32% !important; /* Three slides visible on desktop */
+        max-width: 32% !important;
+    }
+}
+
+
+
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+   header {
+    height: 110vh;
+    }
+    .head {
+       height: 85vh !important;
+   
+}
+   
+    
+    h2:before {
+    width: 15% !important;
+    
+}
+    h2:after {
+    width: 15% !important;
+}
+    
+    .reviews6-dots {
+    display: flex;
+    }
+    .reviews6-slides{
+        gap: 0px;
+    }
+    .slide5-dots{
+        display: block !important;
+    }
+    .slide5-slides {
+        display: flex;
+    }
+
+    .slide5-card {
+        flex: 0 0 auto;
+        max-width: 90%;
+        margin: 20px;
+    }
+     .new-slider-slides {
+        display: flex;
+    }
+
+    .new-slider-card {
+        flex: 0 0 auto; /* Cards remain static */
+        max-width: 300px; /* Adjust width for desktop */
+        margin: 20px;
+    }
+    .new-slider-dots{
+        display: flex!important;
+    }
+    .new-slides {
+        display: flex;
+    }
+
+    .new-card {
+        flex: 0 0 auto; /* Cards remain static */
+        max-width: 95%; /* Adjust width for desktop */
+    }
+    .custom-slider-dots{
+        display: flex;
+    }
+    .custom-card {
+        max-width: 95%; /* Adjust for smaller screens */
+        margin: 10px;
+    }
+    .some-div {
+    .menu {
+        display: none;
+    }
+}
+    #reviews {
+    .reviews-block {
+        display: block !important;
+       
+    }
+}
+    #reviews {
+    & .reviews-block {
+        & .review {
+            width: 100% !important;
+        }
+    }
+}
+   
+    #learn-more {
+    .contact-cards {
+        gap: 10px;
+}
+    }
+    #learn-more {
+    .container {
+        display: block !important;
+    }
+          .box {
+        width: 100% !important;
+    }
+    }
+    
+    #learn-more {
+    & .facts-box {
+        .fact-box {
+            width: 100% !important;
+            display: flex;
+            gap: 0.5rem;
+        }
+    }
+}
+    #events {
+    .card {
+        width: 100% !important;
+    }
+}
+    
+    .event-block{
+        display: none !important;
+    }
+   
+    #meat {
+    .card {
+        width: 100% !important;
+    }
+} 
+.meat-block{
+    display: none !important;
+}
+    
+     .wrap.offers {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center the cards */
+        gap: 1.5rem; /* Add space between cards */
+    }
+
+    .card {
+        width: 90% !important; /* Reduce card width for smaller screens */
+        margin: 10px auto; /* Center the card */
+        padding: 1rem; /* Add padding for better spacing */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a slight shadow */
+    }
+
+    .card img {
+        max-width: 50px; /* Adjust the size of the icon */
+        margin-bottom: 1rem; /* Add space below the icon */
+    }
+
+    .card h4 {
+        font-size: 1.2rem; /* Adjust heading size */
+        margin-bottom: 0.5rem;
+    }
+
+    .card h5 {
+        font-size: 1rem; /* Adjust subheading size */
+        margin-bottom: 0.5rem;
+    }
+
+    .card p {
+        font-size: 0.9rem; /* Adjust paragraph size */
+        line-height: 1.5; /* Improve readability */
+        margin-bottom: 1rem;
+    }
+
+    .btn-wrap {
+        display: flex;
+        justify-content: center; /* Center the button */
+    }
+
+    .contact-card {
+        font-size: 0.9rem; /* Adjust button font size */
+        padding: 0.5rem 1rem; /* Adjust button padding */
+        border-radius: 4px; /* Slightly rounded corners */
+        display: flex;
+        align-items: center;
+        gap: 0.5rem; /* Add space between text and icon */
+    }
+
+    .contact-card img {
+        max-width: 12px; /* Adjust the size of the icon inside the button */
+    }
+    
+    
+    
+    
+    .info-card {
+        max-width: 90%; /* Adjust width to fit smaller screens */
+        margin: 0 auto; /* Center the card */
+    }
+
+    .info-content {
+        padding-top: 50px;
+        padding-bottom: 70px;
+    }
+
+    .info-content h4 {
+        font-size: 1.3rem; /* Adjust heading size */
+    }
+
+    .info-content p {
+        font-size: 0.9rem; /* Adjust paragraph size */
+        margin-bottom: 1rem;
+    }
+
+    .info-button {
+        font-size: 0.9rem; /* Adjust button text size */
+        padding: 0.4rem 0.8rem; /* Adjust button padding */
+    }
+    
+    .some-div{
+        width: 100% !important;
+    }
+    
+    .info-section{
+        display: flex !important;
+    }
+    .slider{
+        padding: 0px;
+    }
+    .slider-dots {
+    display: flex;
+    
+    
+}
+    
+    .passion {
+        min-width: 95%;
+    }
+    .passion h4 {
+        font-size: 1rem;
+    }
+
+    .passion p {
+        font-size: 0.9rem;
+    }
+    
+    nav {
+        position: relative;
+    }
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .menu-toggle .bar {
+        background-color: white;
+        height: 3px;
+        width: 25px;
+        margin: 3px 0;
+    }
+
+    .nav-elements {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        z-index: 10;
+    }
+
+    .nav-elements.active {
+        display: flex;
+    }
+
+    .nav-elements ul {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .head {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .text-block h1 {
+        font-size: 1.3rem !important;
+        text-align: left !important;
+    }
+
+    .text-block p {
+        font-size: 1rem;
+        text-align: left !important;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .default-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+    .text-block {
+    width: 100% !important; 
+    
+}
+    .text-block h1{
+        width: 100% !important;
+    }
+    .head br {
+        display: none;
+    }
+    .buttons {
+    flex-direction: row; 
+     gap: 0.5rem; 
+    display: flex;
+}
+    .default-btn {
+    width: fit-content !important;
+}
+    .default-btn:nth-child(2) {
+    width: fit-content !important;
+}
+    h2{
+        font-size: 1.6rem;
+    }
+    .pdesc {
+    text-align: left;
+}
+    .horse-block{
+        display: none !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        max-width: 30px;
+    }
+
+    .text-block h1 {
+        font-size: 1.8rem;
+    }
+
+    .text-block p {
+        font-size: 0.9rem;
+    }
+
+    .default-btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+}
+
+
 
