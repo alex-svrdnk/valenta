@@ -1364,7 +1364,7 @@ section {
 /* Mobile Responsive Styles */
 @media (max-width: 768px) {
    header {
-    height: 110vh;
+    height: 100vh;
     }
     .head {
        height: 85vh !important;
