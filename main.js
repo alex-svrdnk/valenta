@@ -3,16 +3,33 @@ closeMenuBtn.addEventListener('click', function(){
     document.querySelector('#nav-links').classList.remove('active');
 });
 
-const mobileMenu = document.getElementById('mobile-menu');
-const navLinks = document.getElementById('nav-links');
+let whatCopied = '';
 
-mobileMenu.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-    mobileMenu.classList.toggle('active');
+function showCopiedMessage(whatCopied){
+    const copied =  document.querySelector('.copied')
+    copied.classList.add('visible');
+    document.querySelector('#copied').textContent = whatCopied;
+    setTimeout(function(){
+        copied.classList.remove('visible');
+    }, 1500);
+}
+
+document.querySelectorAll('.copy-val').forEach(_ => {
+    _.addEventListener('click', async function(){
+        await navigator.clipboard.writeText(this.dataset.value);
+        whatCopied = this.dataset.copy;
+        showCopiedMessage(whatCopied);
+    });
 });
 
 
 
+const mobileMenu = document.getElementById('mobile-menu');
+const navLinks = document.getElementById('nav-links');
+
+mobileMenu.addEventListener('click', () => {
+    navLinks.classList.add('active');
+});
 
 //slide1
 
@@ -78,11 +95,6 @@ slider.addEventListener('touchend', () => {
     endX = 0;
 });
 
-
-
-
-
-
 //slider2
 const customSlides = document.querySelector('.custom-slides');
 const customDots = [];
@@ -145,11 +157,6 @@ customSlider.addEventListener('touchend', () => {
     customStartX = 0;
     customEndX = 0;
 });
-
-
-
-
-
 
 //slider3
 
@@ -223,14 +230,6 @@ window.addEventListener('resize', () => {
     }
 });
 
-
-
-
-
-
-
-
-
 //slider4
 // Select the necessary elements
 const slide5Slides = document.querySelector('.slide5-slides');
@@ -303,12 +302,6 @@ window.addEventListener('resize', () => {
         slide5GoToSlide(slide5CurrentIndex);
     }
 });
-
-
-
-
-
-
 
 //slider5
 // Select Elements

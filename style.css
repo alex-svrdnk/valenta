@@ -1455,6 +1455,10 @@ section {
         display: flex;
     }
 
+    #description{
+        margin-bottom: 0;
+    }
+
     .new-card {
         flex: 0 0 auto; /* Cards remain static */
         max-width: 95%; /* Adjust width for desktop */
@@ -1463,15 +1467,50 @@ section {
     .custom-slider-dots {
         display: flex;
     }
+    #horse-header{
+        margin-top: 0;
+    }
 
     .custom-card {
         max-width: 95%; /* Adjust for smaller screens */
         margin: 10px;
     }
 
+    .visible{
+        opacity: 1 !important;
+        transition: 0.2s ease;
+    }
+
+    .copied{
+        transition: 0.2s ease;
+        opacity: 0;
+        color: white;
+        font-size: 10px;
+        border: 2px solid white;
+        text-align: center;
+        padding: 5px;
+        width: 90%;
+        margin: 10px auto;
+    }
+
     .some-div {
+        display: block;
         .menu {
-            display: none;
+            z-index: 98;
+            top: 90%;
+            /*bottom: 0 !important;*/
+            height: 60px !important;
+            width: 97%;
+            margin: 0 auto;
+            padding: 0;
+            display: flex;
+            .item{
+                border: none;
+                border-bottom: 2px solid black;
+                height: auto;
+                padding: 0;
+                margin: 0;
+            }
         }
     }
 
@@ -1684,6 +1723,7 @@ section {
         position: fixed;
         left: 0;
         top: 0;
+        z-index: 99;
     }
 
     .lang-block {
