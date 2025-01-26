@@ -375,6 +375,47 @@ reviews6Slides.addEventListener('touchend', () => {
     reviews6EndX = 0;
 });
 
+const scrollSections = document.querySelectorAll('.scroll-sect');
+const menu = document.querySelector('.menu');
+function detectCurrentSection() {
+    let currentSection = null;
+
+    scrollSections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        const sectionHeight = rect.height;
+
+        // Проверяем, если верхняя часть секции вошла в видимую область
+        if (rect.top >= 0 && rect.top <= window.innerHeight / 2) {
+            currentSection = section;
+        }
+
+        // Для последней секции, чтобы она стала активной, когда хотя бы немного видна
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+            const sectionVisibility = Math.min(Math.max(0, rect.bottom), window.innerHeight) / sectionHeight;
+            if (sectionVisibility > 0.5) {
+                currentSection = section;
+            }
+        }
+    });
+
+    if (currentSection) {
+        const selectedItem = menu.querySelector(`[data-section="${currentSection.id}"]`);
+        menu.querySelectorAll('.item').forEach(item => item.classList.remove('active-tab'));
+        selectedItem.classList.add('active-tab');
+        selectedItem.querySelector('svg').style.fill = '#1E1E1E';
+    }
+}
+
+// Слушаем событие прокрутки
+// window.addEventListener('scroll', () => {
+//     window.requestAnimationFrame(detectCurrentSection);
+// });
+
+
+
+window.addEventListener('scroll', detectCurrentSection);
+
+
 // Initialize Slider
 reviews6UpdateSlidesToShow();
 reviews6GoToSlide(0);

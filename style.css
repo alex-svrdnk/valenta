@@ -885,9 +885,6 @@ section {
     }
 }
 
-.active{
-    background-color: white !important;
-}
 
 /* Slides container */
 .custom-slides {
@@ -1531,10 +1528,14 @@ section {
                 justify-content: center;
                 width: 100%;
                 height: 100%;
+                svg{
+                    fill: none;
+                }
             }
 
             .active-tab{
                 border-bottom: 3px solid black;
+                transition: 0.3s ease;
             }
         }
     }
