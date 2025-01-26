@@ -17,6 +17,7 @@
     box-sizing: border-box;
     font-family: var(--dFont);
     letter-spacing: 0.1em;
+    scroll-behavior: smooth;
 }
 
 nav {
@@ -879,6 +880,13 @@ section {
     position: relative;
     overflow: hidden;
     width: 100%;
+    dots{
+        background-color: gray;
+    }
+}
+
+.active{
+    background-color: white !important;
 }
 
 /* Slides container */
@@ -907,7 +915,7 @@ section {
 
 /* Individual dot */
 .custom-slider-dots button {
-    background: #ccc;
+    background: gray;
     border: none;
     width: 70px;
     height: 4px;
@@ -1107,7 +1115,7 @@ section {
 }
 
 .new-slider-dots button {
-    background: #ccc;
+    background: gray;
     border: none;
     width: 70px;
     height: 4px;
@@ -1445,6 +1453,10 @@ section {
         margin: 20px;
     }
 
+    section{
+        scroll-margin-top: 100px;
+    }
+
     .new-slider-dots {
         display: flex !important;
         justify-content: center;
@@ -1496,20 +1508,33 @@ section {
     .some-div {
         display: block;
         .menu {
+            background: var(--bg);
             z-index: 98;
-            top: 90%;
+            top: -10px;
             /*bottom: 0 !important;*/
-            height: 60px !important;
-            width: 97%;
-            margin: 0 auto;
-            padding: 0;
+            height: 65px !important;
+            width: 100%;
+            margin: 0 auto !important;
+            padding: 0 !important;
             display: flex;
             .item{
                 border: none;
-                border-bottom: 2px solid black;
+                border-bottom: 3px solid rgba(128, 128, 128, 0.69);
+                background: none;
                 height: auto;
                 padding: 0;
                 margin: 0;
+            }
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+            }
+
+            .active-tab{
+                border-bottom: 3px solid black;
             }
         }
     }
