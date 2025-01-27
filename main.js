@@ -400,9 +400,19 @@ function detectCurrentSection() {
 
     if (currentSection) {
         const selectedItem = menu.querySelector(`[data-section="${currentSection.id}"]`);
-        menu.querySelectorAll('.item').forEach(item => item.classList.remove('active-tab'));
+        menu.querySelectorAll('.item').forEach(_ => _.classList.remove('active-tab'));
         selectedItem.classList.add('active-tab');
-        selectedItem.querySelector('svg').style.fill = '#1E1E1E';
+        menu.querySelectorAll('svg>path').forEach(svg => {
+            svg.setAttribute('fill-opacity', '0.3');
+            // svg.style.fillOpacity = '0.3 !important'
+        });
+        selectedItem.querySelectorAll('svg>path').forEach(_=>{
+            _.setAttribute('stroke-opacity', '1.0');
+        })
+
+        selectedItem.querySelectorAll('svg>path').forEach(_=>{
+            _.setAttribute('fill-opacity', '1.0');
+        })
     }
 }
 
