@@ -1265,9 +1265,7 @@ section {
     border-radius: 12px;
 }
 
-.dn {
-    display: none !important;
-}
+
 
 
 .reviews6-slides {
@@ -1598,9 +1596,9 @@ section {
         }
     }
 
-    .dn {
-        display: block;
-    }
+    /*.dn {*/
+    /*    display: flex !important;*/
+    /*}*/
 
     .event-block {
         display: none !important;
@@ -1904,6 +1902,19 @@ section {
     }
 }
 
+
+
+@media (min-width: 768px) {
+    body {
+        display: none;
+    }
+}
+
+/* Показываем всё только на мобильных */
+@media (max-width: 767px) {
+    body {
+        display: block;
+    }
 }
 
 
