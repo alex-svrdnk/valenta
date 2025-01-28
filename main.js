@@ -24,12 +24,12 @@ document.querySelectorAll('.copy-val').forEach(_ => {
 
 
 
-const mobileMenu = document.getElementById('mobile-menu');
-const navLinks = document.getElementById('nav-links');
-
-mobileMenu.addEventListener('click', () => {
-    navLinks.classList.add('active');
-});
+// const mobileMenu = document.getElementById('mobile-menu');
+// const navLinks = document.getElementById('nav-links');
+//
+// mobileMenu.addEventListener('click', () => {
+//     navLinks.classList.add('active');
+// });
 
 //slide1
 

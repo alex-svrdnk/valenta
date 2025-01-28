@@ -1507,7 +1507,7 @@ section {
         position: sticky;
         width: 101%;
         display: flex;
-        z-index: 999;
+        z-index: 998;
 
         .main-section-item {
             width: 33%;
@@ -1519,6 +1519,7 @@ section {
         }
 
         .selected-menu-item {
+            transition: 0.2s ease-in-out;
             border-color: white;
             svg {
                 path {
@@ -1931,6 +1932,7 @@ section {
         left: 0;
         top: 0;
         z-index: 99;
+        transition: 0.2s ease-in-out;
     }
 
     .lang-block {

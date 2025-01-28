@@ -6,4 +6,9 @@ $(() => {
         $(`.head-slide[data-bg="${bg}"]`).addClass('active-head-slide');
         $(this).addClass('selected-menu-item');
     });
+
+    $('#mobile-menu').on('click', () => {
+        $('#nav-links').addClass('active');
+    });
 });
+
