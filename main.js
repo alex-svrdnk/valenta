@@ -416,10 +416,15 @@ function detectCurrentSection() {
     }
 }
 
-// Слушаем событие прокрутки
-// window.addEventListener('scroll', () => {
-//     window.requestAnimationFrame(detectCurrentSection);
-// });
+
+const headerSlideButtons = document.querySelectorAll('.main-section-item');
+console.log(headerSlideButtons);
+
+headerSlideButtons.forEach(_=>{
+    _.addEventListener('click', function(){
+        console.log('biba');
+    })
+})
 
 
 

@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+.section-main {
+    width: 70%;
+    height: 100vh;
+
+    margin: auto;
+}
+
+
 :root {
     --dFont: 'Raleway', sans-serif;
     --kBlack: #1E1E1E;
@@ -150,13 +158,14 @@ body {
 header {
     height: 80vh;
     width: 100%;
-    background-image: url("assets/bg.png");
+    /* background-image: url("assets/bg.png"); */
     background-size: cover;
     background-position: center;
+    background-color: #4caf50;
 
     .head {
         position: relative;
-        height: 70vh;
+        /* height: 70vh; */
         width: 100%;
         /*background-color: black;*/
 
@@ -263,9 +272,7 @@ h2 {
             }
         }
 
-        .passion:nth-child(1) {
-
-        }
+        .passion:nth-child(1) {}
     }
 }
 
@@ -575,7 +582,9 @@ h2 {
         padding: 3rem 2rem;
         text-align: center;
 
-        h4, p, button {
+        h4,
+        p,
+        button {
             margin-bottom: 1rem;
         }
 
@@ -662,7 +671,8 @@ h2 {
         }
     }
 
-    h3, h4 {
+    h3,
+    h4 {
         font-size: 1.25rem;
         color: var(--greenText);
         text-transform: uppercase;
@@ -774,7 +784,8 @@ section {
     text-align: center;
     color: white;
     padding: 1.5rem;
-    background: rgba(0, 0, 0, 0.5); /* Overlay background */
+    background: rgba(0, 0, 0, 0.5);
+    /* Overlay background */
     border-radius: 8px;
 }
 
@@ -797,7 +808,8 @@ section {
     text-decoration: none;
     font-size: 1rem;
     padding: 0.5rem 1rem;
-    background: rgba(255, 255, 255, 0.2); /* Light button background */
+    background: rgba(255, 255, 255, 0.2);
+    /* Light button background */
     border-radius: 4px;
     transition: background 0.3s ease;
 }
@@ -937,44 +949,59 @@ section {
     justify-content: center;
     text-align: center;
     padding: 20px;
-    border: 1px solid #e6e6e6; /* Light gray border */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    width: 100%; /* Full width */
-    max-width: 350px; /* Maximum width for the card */
-    margin: 20px auto; /* Centering the card */
-    background-color: #fff; /* White background */
-    font-family: 'Arial', sans-serif; /* Use a clean sans-serif font */
+    border: 1px solid #e6e6e6;
+    /* Light gray border */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    width: 100%;
+    /* Full width */
+    max-width: 350px;
+    /* Maximum width for the card */
+    margin: 20px auto;
+    /* Centering the card */
+    background-color: #fff;
+    /* White background */
+    font-family: 'Arial', sans-serif;
+    /* Use a clean sans-serif font */
 }
 
 /* Top Icon */
 .custom-card img {
 
-    height: auto; /* Maintain aspect ratio */
+    height: auto;
+    /* Maintain aspect ratio */
 }
 
 /* Title */
 .custom-card h4 {
     font-size: 18px;
     font-weight: bold;
-    color: #333; /* Dark gray */
-    margin-bottom: 8px; /* Space below the title */
+    color: #333;
+    /* Dark gray */
+    margin-bottom: 8px;
+    /* Space below the title */
 }
 
 /* Price */
 .custom-card h5 {
     font-size: 20px;
     font-weight: bold;
-    color: #4caf50; /* Green color */
-    margin-bottom: 12px; /* Space below the price */
+    color: #4caf50;
+    /* Green color */
+    margin-bottom: 12px;
+    /* Space below the price */
 }
 
 /* Description */
 .custom-card p {
     font-size: 14px;
     line-height: 1.5;
-    color: #666; /* Medium gray */
-    margin-bottom: 20px; /* Space below the text */
+    color: #666;
+    /* Medium gray */
+    margin-bottom: 20px;
+    /* Space below the text */
 }
 
 /* Button Wrapper */
@@ -990,24 +1017,30 @@ section {
     align-items: center;
     justify-content: center;
     padding: 12px 24px;
-    border: 2px solid #333; /* Black border */
+    border: 2px solid #333;
+    /* Black border */
     border-radius: 4px;
-    background-color: transparent; /* Transparent background */
+    background-color: transparent;
+    /* Transparent background */
     font-size: 14px;
     font-weight: bold;
-    color: #333; /* Black text */
+    color: #333;
+    /* Black text */
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .custom-contact-card span {
-    margin-right: 8px; /* Space between text and icon */
+    margin-right: 8px;
+    /* Space between text and icon */
 }
 
 /* Button Hover Effect */
 .custom-contact-card:hover {
-    background-color: #333; /* Black background on hover */
-    color: #fff; /* White text on hover */
+    background-color: #333;
+    /* Black background on hover */
+    color: #fff;
+    /* White text on hover */
 }
 
 /* Container Styles */
@@ -1041,7 +1074,8 @@ section {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     background-color: #fff;
     margin: 10px;
-    max-width: 100%; /* Matches design */
+    max-width: 100%;
+    /* Matches design */
     box-sizing: border-box;
 }
 
@@ -1156,10 +1190,12 @@ section {
     padding: 20px;
     border: 1px solid #e6e6e6;
     border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Soft shadow */
     background-color: #fff;
     margin: 10px;
-    max-width: 350px; /* Card max width */
+    max-width: 350px;
+    /* Card max width */
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
@@ -1182,7 +1218,8 @@ section {
 .slide5-card h5 {
     font-size: 24px;
     font-weight: bold;
-    color: #4caf50; /* Green color */
+    color: #4caf50;
+    /* Green color */
     margin-bottom: 15px;
 }
 
@@ -1206,25 +1243,31 @@ section {
     align-items: center;
     justify-content: center;
     padding: 12px 20px;
-    border: 1px solid #333; /* Thin border */
+    border: 1px solid #333;
+    /* Thin border */
     border-radius: 6px;
-    background-color: #fff; /* White background */
+    background-color: #fff;
+    /* White background */
     font-size: 14px;
     font-weight: bold;
-    color: #333; /* Black text */
+    color: #333;
+    /* Black text */
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .slide5-contact-btn:hover {
-    background-color: #333; /* Black background on hover */
-    color: #fff; /* White text on hover */
+    background-color: #333;
+    /* Black background on hover */
+    color: #fff;
+    /* White text on hover */
 }
 
 /* Container Background and Card Alignment */
 .slide5-container {
     padding: 20px;
-    border-radius: 12px; /* Rounded corners for container */
+    border-radius: 12px;
+    /* Rounded corners for container */
 }
 
 /* Dots Container */
@@ -1247,7 +1290,8 @@ section {
 }
 
 .slide5-dots button.active {
-    background: #000; /* Active dot color */
+    background: #000;
+    /* Active dot color */
 }
 
 
@@ -1294,7 +1338,8 @@ section {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black overlay */
+    background: rgba(0, 0, 0, 0.6);
+    /* Semi-transparent black overlay */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1310,7 +1355,8 @@ section {
 
 .reviews6-stars {
     font-size: 18px;
-    color: #ffcc00; /* Star color */
+    color: #ffcc00;
+    /* Star color */
     margin-bottom: 10px;
 }
 
@@ -1380,14 +1426,16 @@ section {
 }
 
 .reviews6-dots button.active {
-    background: #ffcc00; /* Active dot color */
+    background: #ffcc00;
+    /* Active dot color */
 }
 
 
 /* Responsive Design */
 @media (min-width: 1024px) {
     .reviews6-slide {
-        flex: 0 0 32% !important; /* Three slides visible on desktop */
+        flex: 0 0 32% !important;
+        /* Three slides visible on desktop */
         max-width: 32% !important;
     }
 }
@@ -1397,17 +1445,35 @@ section {
 @media (max-width: 768px) {
     header {
         height: 100vh;
+        position: relative;
+    }
+
+    .main-section-menu{
+        position: fixed;
+        width: 100%;
+        display: flex;
+        .main-section-item{
+            width: 33%;
+            display: flex;            
+            align-items: center;
+            justify-content: center;
+            border-top: 2px solid white;
+            padding: 10px 0;
+        
+        }
+        border: none;
+
+        bottom: 0;
+        left: 0;
     }
 
     .container {
         width: 90%;
     }
 
-    .head {
-        height: 85vh !important;
-
-    }
-
+    /*.head {*/
+    /*    height: 65vh !important;*/
+    /*}*/
 
     h2:before {
         width: 15% !important;
@@ -1449,8 +1515,10 @@ section {
     }
 
     .new-slider-card {
-        flex: 0 0 auto; /* Cards remain static */
-        max-width: 300px; /* Adjust width for desktop */
+        flex: 0 0 auto;
+        /* Cards remain static */
+        max-width: 300px;
+        /* Adjust width for desktop */
         margin: 20px;
     }
 
@@ -1473,8 +1541,10 @@ section {
     }
 
     .new-card {
-        flex: 0 0 auto; /* Cards remain static */
-        max-width: 95%; /* Adjust width for desktop */
+        flex: 0 0 auto;
+        /* Cards remain static */
+        max-width: 95%;
+        /* Adjust width for desktop */
     }
 
     .custom-slider-dots {
@@ -1486,7 +1556,8 @@ section {
     }
 
     .custom-card {
-        max-width: 95%; /* Adjust for smaller screens */
+        max-width: 95%;
+        /* Adjust for smaller screens */
         margin: 10px;
     }
 
@@ -1615,61 +1686,82 @@ section {
     }
 
     .wrap.offers {
-        flex-direction: column; /* Stack cards vertically */
-        align-items: center; /* Center the cards */
-        gap: 1.5rem; /* Add space between cards */
+        flex-direction: column;
+        /* Stack cards vertically */
+        align-items: center;
+        /* Center the cards */
+        gap: 1.5rem;
+        /* Add space between cards */
     }
 
     .card {
-        width: 90% !important; /* Reduce card width for smaller screens */
-        margin: 10px auto; /* Center the card */
-        padding: 1rem; /* Add padding for better spacing */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a slight shadow */
+        width: 90% !important;
+        /* Reduce card width for smaller screens */
+        margin: 10px auto;
+        /* Center the card */
+        padding: 1rem;
+        /* Add padding for better spacing */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* Optional: Add a slight shadow */
     }
 
     .card img {
-        max-width: 50px; /* Adjust the size of the icon */
-        margin-bottom: 1rem; /* Add space below the icon */
+        max-width: 50px;
+        /* Adjust the size of the icon */
+        margin-bottom: 1rem;
+        /* Add space below the icon */
     }
 
     .card h4 {
-        font-size: 1.2rem; /* Adjust heading size */
+        font-size: 1.2rem;
+        /* Adjust heading size */
         margin-bottom: 0.5rem;
     }
 
     .card h5 {
-        font-size: 1rem; /* Adjust subheading size */
+        font-size: 1rem;
+        /* Adjust subheading size */
         margin-bottom: 0.5rem;
     }
 
     .card p {
-        font-size: 0.9rem; /* Adjust paragraph size */
-        line-height: 1.5; /* Improve readability */
+        font-size: 0.9rem;
+        /* Adjust paragraph size */
+        line-height: 1.5;
+        /* Improve readability */
         margin-bottom: 1rem;
     }
 
     .btn-wrap {
         display: flex;
-        justify-content: center; /* Center the button */
+        justify-content: center;
+        /* Center the button */
     }
 
     .contact-card {
-        font-size: 0.9rem; /* Adjust button font size */
-        padding: 0.5rem 1rem; /* Adjust button padding */
-        border-radius: 4px; /* Slightly rounded corners */
+        font-size: 0.9rem;
+        /* Adjust button font size */
+        padding: 0.5rem 1rem;
+        /* Adjust button padding */
+        border-radius: 4px;
+        /* Slightly rounded corners */
         display: flex;
         align-items: center;
-        gap: 0.5rem; /* Add space between text and icon */
+        gap: 0.5rem;
+        /* Add space between text and icon */
     }
 
     .contact-card img {
-        max-width: 12px; /* Adjust the size of the icon inside the button */
+        max-width: 12px;
+        /* Adjust the size of the icon inside the button */
     }
 
 
     .info-card {
-        max-width: 90%; /* Adjust width to fit smaller screens */
-        margin: 0 auto; /* Center the card */
+        max-width: 90%;
+        /* Adjust width to fit smaller screens */
+        margin: 0 auto;
+        /* Center the card */
     }
 
     .info-content {
@@ -1678,17 +1770,21 @@ section {
     }
 
     .info-content h4 {
-        font-size: 1.3rem; /* Adjust heading size */
+        font-size: 1.3rem;
+        /* Adjust heading size */
     }
 
     .info-content p {
-        font-size: 0.9rem; /* Adjust paragraph size */
+        font-size: 0.9rem;
+        /* Adjust paragraph size */
         margin-bottom: 1rem;
     }
 
     .info-button {
-        font-size: 0.9rem; /* Adjust button text size */
-        padding: 0.4rem 0.8rem; /* Adjust button padding */
+        font-size: 0.9rem;
+        /* Adjust button text size */
+        padding: 0.4rem 0.8rem;
+        /* Adjust button padding */
         background: none !important;
     }
 
@@ -1839,6 +1935,8 @@ section {
     }
 
     .default-btn {
+        background-color: #fff;
+        opacity: 0.2;
         padding: 0.5rem 1rem;
         font-size: 0.9rem;
     }
@@ -1916,7 +2014,3 @@ section {
         display: block;
     }
 }
-
-
-
-
