@@ -417,14 +417,6 @@ function detectCurrentSection() {
 }
 
 
-const headerSlideButtons = document.querySelectorAll('.main-section-item');
-console.log(headerSlideButtons);
-
-headerSlideButtons.forEach(_=>{
-    _.addEventListener('click', function(){
-        console.log('biba');
-    })
-})
 
 
 
