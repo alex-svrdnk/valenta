@@ -384,12 +384,12 @@ function detectCurrentSection() {
         const rect = section.getBoundingClientRect();
         const sectionHeight = rect.height;
 
-        // Проверяем, если верхняя часть секции вошла в видимую область
+
         if (rect.top >= 0 && rect.top <= window.innerHeight / 2) {
             currentSection = section;
         }
 
-        // Для последней секции, чтобы она стала активной, когда хотя бы немного видна
+
         if (rect.top < window.innerHeight && rect.bottom > 0) {
             const sectionVisibility = Math.min(Math.max(0, rect.bottom), window.innerHeight) / sectionHeight;
             if (sectionVisibility > 0.5) {
