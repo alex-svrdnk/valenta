@@ -114,7 +114,7 @@ body {
         /*overflow: hidden;*/
         transition: 0.2s ease-in-out;
 
-        .item {
+        .item-tab {
             width: 100%;
             text-align: center;
             /*height: 50px;*/
@@ -1709,7 +1709,7 @@ section {
             padding: 0 !important;
             display: flex;
 
-            .item {
+            .item-tab {
                 border: none;
                 border-bottom: 3px solid rgba(128, 128, 128, 0.69);
                 background: none;

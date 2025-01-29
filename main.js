@@ -41,59 +41,59 @@ let startX = 0; // Starting X position of the touch
 let endX = 0;   // Ending X position of the touch
 
 // Create navigation dots
-const slider = document.querySelector('.slider');
-const dotContainer = document.createElement('div');
-dotContainer.className = 'slider-dots';
-slider.appendChild(dotContainer);
+// const slider = document.querySelector('.slider');
+// const dotContainer = document.createElement('div');
+// dotContainer.className = 'slider-dots';
+// slider.appendChild(dotContainer);
+//
+// document.querySelectorAll('.passion').forEach((_, index) => {
+//     const dot = document.createElement('button');
+//     dot.addEventListener('click', () => goToSlide(index));
+//     dotContainer.appendChild(dot);
+//     dots.push(dot);
+// });
 
-document.querySelectorAll('.passion').forEach((_, index) => {
-    const dot = document.createElement('button');
-    dot.addEventListener('click', () => goToSlide(index));
-    dotContainer.appendChild(dot);
-    dots.push(dot);
-});
+// function updateDots() {
+//     dots.forEach((dot, index) => {
+//         dot.classList.toggle('active', index === currentIndex);
+//     });
+// }
 
-function updateDots() {
-    dots.forEach((dot, index) => {
-        dot.classList.toggle('active', index === currentIndex);
-    });
-}
-
-function goToSlide(index) {
-    currentIndex = index;
-    slides.style.transform = `translateX(-${currentIndex * 100}%)`;
-    updateDots();
-}
+// function goToSlide(index) {
+//     currentIndex = index;
+//     slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+//     updateDots();
+// }
 
 // Initialize the slider
-goToSlide(0);
+// goToSlide(0);
 
 // Add swipe functionality
-slider.addEventListener('touchstart', (e) => {
-    startX = e.touches[0].clientX; // Record the starting touch position
-});
-
-slider.addEventListener('touchmove', (e) => {
-    endX = e.touches[0].clientX; // Continuously track the touch position
-});
-
-slider.addEventListener('touchend', () => {
-    const threshold = 50; // Minimum swipe distance to trigger a slide
-    if (startX - endX > threshold) {
-        // Swipe left
-        if (currentIndex < dots.length - 1) {
-            goToSlide(currentIndex + 1);
-        }
-    } else if (endX - startX > threshold) {
-        // Swipe right
-        if (currentIndex > 0) {
-            goToSlide(currentIndex - 1);
-        }
-    }
-    // Reset touch positions
-    startX = 0;
-    endX = 0;
-});
+// slider.addEventListener('touchstart', (e) => {
+//     startX = e.touches[0].clientX; // Record the starting touch position
+// });
+//
+// slider.addEventListener('touchmove', (e) => {
+//     endX = e.touches[0].clientX; // Continuously track the touch position
+// });
+//
+// slider.addEventListener('touchend', () => {
+//     const threshold = 50; // Minimum swipe distance to trigger a slide
+//     if (startX - endX > threshold) {
+//         // Swipe left
+//         if (currentIndex < dots.length - 1) {
+//             goToSlide(currentIndex + 1);
+//         }
+//     } else if (endX - startX > threshold) {
+//         // Swipe right
+//         if (currentIndex > 0) {
+//             goToSlide(currentIndex - 1);
+//         }
+//     }
+//     // Reset touch positions
+//     startX = 0;
+//     endX = 0;
+// });
 
 //slider2
 const customSlides = document.querySelector('.custom-slides');
@@ -400,7 +400,7 @@ function detectCurrentSection() {
 
     if (currentSection) {
         const selectedItem = menu.querySelector(`[data-section="${currentSection.id}"]`);
-        menu.querySelectorAll('.item').forEach(_ => _.classList.remove('active-tab'));
+        menu.querySelectorAll('.item-tab').forEach(_ => _.classList.remove('active-tab'));
         selectedItem.classList.add('active-tab');
         menu.querySelectorAll('svg>path').forEach(svg => {
             svg.setAttribute('fill-opacity', '0.3');
@@ -424,8 +424,8 @@ window.addEventListener('scroll', detectCurrentSection);
 
 
 // Initialize Slider
-reviews6UpdateSlidesToShow();
-reviews6GoToSlide(0);
+// reviews6UpdateSlidesToShow();
+// reviews6GoToSlide(0);
 
 // Update on Window Resize
 window.addEventListener('resize', reviews6UpdateSlidesToShow);
