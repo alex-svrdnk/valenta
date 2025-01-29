@@ -204,7 +204,7 @@ newSlider.addEventListener('touchmove', (e) => {
 });
 
 newSlider.addEventListener('touchend', () => {
-    const newThreshold = 50; // Minimum swipe distance to trigger a slide
+    const newThreshold = 200; // Minimum swipe distance to trigger a slide
     if (newStartX - newEndX > newThreshold) {
         // Swipe left
         if (newCurrentIndex < newDots.length - 1) {

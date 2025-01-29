@@ -394,6 +394,35 @@ h2 {
     }
 }
 
+/*owl stuff*/
+.owl-theme .owl-dots .owl-dot span {
+    height: 3px;
+    border-radius: 0;
+    margin: 0 !important;
+    background: rgba(255, 255, 255, 0.5) !important;
+}
+
+.active{
+    background-color: #fff !important;
+}
+.owl-theme .owl-dots .owl-dot{
+    width: 30%;
+}
+.owl-theme .owl-nav.disabled+.owl-dots {
+    width: 95%;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.owl-theme .owl-dots .owl-dot span{
+    width: 100%;
+}
+
+
 #meat {
     .wrap {
         gap: 1rem;
@@ -836,12 +865,23 @@ section {
 .passion {
     min-width: 25%;
     box-sizing: border-box;
-    padding: 1rem;
+    padding: 1rem 1rem 3rem;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.6);
+    position: relative;
+    /*background-color: rgba(0, 0, 0, 0.6);*/
+    .sibg{
+        width: 100%;
+        height: 100%;
+        filter: blur(2px);
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+
     color: white;
-    border-radius: 8px;
-    margin: 10px;
 }
 
 .passion .ck img {
@@ -1521,6 +1561,7 @@ section {
         .selected-menu-item {
             transition: 0.2s ease-in-out;
             border-color: white;
+
             svg {
                 path {
                     fill-opacity: 1.0;
@@ -1869,18 +1910,14 @@ section {
         display: flex !important;
     }
 
-    .slider {
-        padding: 0px;
-    }
 
-    .slider-dots {
-        display: flex;
-
-
-    }
 
     .passion {
         min-width: 95%;
+        .ck{
+            display: flex;
+            justify-content: center;
+        }
     }
 
     .passion h4 {
