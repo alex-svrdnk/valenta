@@ -1950,7 +1950,7 @@ section {
     .nav-elements {
         display: none;
         flex-direction: column;
-        background-color: var(--grayText);
+        background-color: var(--grayText) !important;
         position: absolute;
         /*top: 100%;*/
         /*right: 0;*/
