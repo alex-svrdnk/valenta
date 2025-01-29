@@ -419,7 +419,7 @@ function detectCurrentSection() {
 
 
 
-
+detectCurrentSection();
 window.addEventListener('scroll', detectCurrentSection);
 
 

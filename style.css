@@ -155,12 +155,12 @@ body {
 }
 
 header {
-    height: 80vh;
+    height: 100vh;
     width: 100%;
     /* background-image: url("assets/bg.png"); */
     background-size: cover;
     background-position: center;
-    background-color: #4caf50;
+    /*background-color: #4caf50;*/
 
     .head {
         position: relative;
@@ -404,13 +404,16 @@ h2 {
     background: rgba(255, 255, 255, 0.5) !important;
 }
 
-.active{
+.active {
     background-color: #fff !important;
 }
-.owl-theme .owl-dots .owl-dot{
+
+.owl-theme .owl-dots .owl-dot {
     width: 30%;
+    height: 4px;
 }
-.owl-theme .owl-nav.disabled+.owl-dots {
+
+.owl-theme .owl-nav.disabled + .owl-dots {
     width: 95%;
     position: absolute;
     left: 50%;
@@ -420,7 +423,7 @@ h2 {
     justify-content: space-between;
 }
 
-.owl-theme .owl-dots .owl-dot span{
+.owl-theme .owl-dots .owl-dot span {
     width: 100%;
 }
 
@@ -871,7 +874,8 @@ section {
     text-align: center;
     position: relative;
     /*background-color: rgba(0, 0, 0, 0.6);*/
-    .sibg{
+
+    .sibg {
         width: 100%;
         height: 100%;
         filter: blur(2px);
@@ -1913,10 +1917,10 @@ section {
     }
 
 
-
     .passion {
         min-width: 95%;
-        .ck{
+
+        .ck {
             display: flex;
             justify-content: center;
         }
@@ -2053,6 +2057,11 @@ section {
         /*opacity: 0.2;*/
         padding: 0.5rem 1rem;
         font-size: 0.9rem;
+
+        a {
+        color: white !important;
+            text-decoration: none;
+        }
     }
 
     .text-block {
