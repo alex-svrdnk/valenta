@@ -658,7 +658,7 @@ h2 {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 4rem 0;
+    padding: 0 0 4rem;
 
     .container {
         gap: 2rem;
@@ -699,9 +699,25 @@ h2 {
                 border-radius: 50%;
                 display: flex;
                 align-items: center;
-                background: #fff;
+                /*background: #fff;*/
                 justify-content: center;
+                align-items: flex-start !important;
             }
+            .cp img {
+                width: 100%;
+                /*height: 100%;*/
+                filter: brightness(0) saturate(100%) invert(31%) sepia(52%) saturate(446%) hue-rotate(45deg);
+
+                /*mask-image: url("assets/icons/mountain.svg");*/
+                /*!*-webkit-mask-image: url("assets/icons/mountain.svg");*!*/
+                /*background-color: #4F772D;*/
+                /*-webkit-mask-repeat: no-repeat;*/
+                /*mask-repeat: no-repeat;*/
+
+                /*-webkit-mask-size: contain;*/
+                /*mask-size: contain;*/
+            }
+
         }
     }
 
@@ -855,7 +871,7 @@ section {
 .info-section {
     display: none;
     justify-content: center;
-    align-items: center;
+    align-items: center;;
 }
 
 .info-card {
@@ -1848,6 +1864,8 @@ section {
         }
     }
 
+    .facts-box{}
+
     #reviews {
         & .reviews-block {
             & .review {
@@ -1909,11 +1927,22 @@ section {
     }
 
     #learn-more {
+        h3{
+            font-size: 1.25rem;
+        }
+         h4{
+            font-size: 1rem !important;
+             margin-bottom: 0 !important;
+        }
         & .facts-box {
             .fact-box {
+                background: none;
                 width: 100% !important;
                 display: flex;
                 gap: 0.5rem;
+                .cp{
+                    width: 25px !important;
+                }
             }
         }
     }
@@ -2052,9 +2081,13 @@ section {
     .some-div {
         width: 100% !important;
     }
+    #horses{
+        margin-top: 2rem;
+    }
 
     .info-section {
         display: flex !important;
+        margin-bottom: 1rem;
     }
 
 
@@ -2288,7 +2321,6 @@ section {
     }
 }
 
-/* Показываем всё только на мобильных */
 @media (max-width: 767px) {
     body {
         display: block;
