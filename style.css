@@ -124,7 +124,7 @@ body {
     }
 
     .wrap-items {
-        width: 95%;
+        width: 100%;
         margin: 0 auto;
 
         .container {
@@ -157,6 +157,7 @@ body {
 header {
     height: 100vh;
     width: 100%;
+    background-color: black;
     /* background-image: url("assets/bg.png"); */
     background-size: cover;
     background-position: center;
@@ -279,7 +280,7 @@ h2 {
 }
 
 .wrap {
-    width: 90%;
+    width: 100%;
     margin-left: auto;
     margin-bottom: 2rem;
 }
@@ -410,11 +411,11 @@ h2 {
 
 .owl-theme .owl-dots .owl-dot {
     width: 30%;
-    height: 4px;
+    /*height: 4px;*/
 }
 
 .owl-theme .owl-nav.disabled + .owl-dots {
-    width: 95%;
+    width: calc(100% - 2rem);
     position: absolute;
     left: 50%;
     bottom: 25px;
@@ -426,7 +427,6 @@ h2 {
 .owl-theme .owl-dots .owl-dot span {
     width: 100%;
 }
-
 
 #meat {
     .wrap {
@@ -838,7 +838,10 @@ section {
 
 .info-button {
     display: inline-block;
-    color: white;
+    color: white !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     font-size: 1rem;
     padding: 0.5rem 1rem;
@@ -876,18 +879,30 @@ section {
     /*background-color: rgba(0, 0, 0, 0.6);*/
 
     .sibg {
+        background: linear-gradient(0deg, #283e17 0%, rgba(0, 0, 0, 0) 100%);
         width: 100%;
         height: 100%;
-        filter: blur(2px);
+        /*filter: blur(2px);*/
         object-fit: cover;
         position: absolute;
         top: 0;
         left: 0;
-        z-index: -1;
+        z-index: -4;
+        img{
+            filter:;
+        }
     }
-
-
     color: white;
+}
+.passion::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #283e17 0%, rgba(0, 0, 0, 0));
+    z-index: -2; /* Помещаем градиент под текст */
 }
 
 .passion .ck img {
@@ -956,10 +971,34 @@ section {
     flex: 0 0 100%;
     text-align: center;
     padding: 20px;
-    border: 1px solid #ccc;
     margin: 10px;
     border-radius: 8px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 350px;
+    margin: 20px auto;
+    background-color: #fff;
+
+    #verified {
+        width: 30px !important;
+    }
+
+    img {
+        width: 10px !important;
+    }
+}
+
+.custom-contact-cards {
+    img {
+        width: 10px !important;
+    }
 }
 
 /* Dots container */
@@ -987,37 +1026,15 @@ section {
     background: #000;
 }
 
-/* General Styles for the Card */
-.custom-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
-    border: 1px solid #e6e6e6;
-    /* Light gray border */
-    border-radius: 8px;
-    /* Rounded corners */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    /* Subtle shadow */
-    width: 100%;
-    /* Full width */
-    max-width: 350px;
-    /* Maximum width for the card */
-    margin: 20px auto;
-    /* Centering the card */
-    background-color: #fff;
-    /* White background */
-    font-family: 'Arial', sans-serif;
-    /* Use a clean sans-serif font */
-}
-
 /* Top Icon */
 .custom-card img {
-
     height: auto;
     /* Maintain aspect ratio */
+}
+
+
+.owl-stage:nth-child(1){
+    /*background: linear-gradient(0deg,#283e17 0%, rgba(0,0,0,0) 100%);*/
 }
 
 /* Title */
@@ -1585,6 +1602,13 @@ section {
         width: 90%;
     }
 
+    .review{
+        text-align: left;
+        *{
+            margin-bottom: 1rem;
+        }
+    }
+
     .head {
         height: 100% !important;
         width: 90% !important;
@@ -1886,7 +1910,8 @@ section {
 
     .info-content {
         padding-top: 50px;
-        padding-bottom: 70px;
+        height: 100%;
+        width: 100%;
     }
 
     .info-content h4 {
@@ -2059,9 +2084,26 @@ section {
         font-size: 0.9rem;
 
         a {
-        color: white !important;
+            color: white !important;
             text-decoration: none;
         }
+    }
+
+    .slider-container {
+        width: 100%;
+        background-color: #fff;
+    }
+
+    w-full {
+        width: 100% !important;
+    }
+
+    .scar {
+        width: 100% !important;
+    }
+
+    .bg-white {
+        background: #fff !important;
     }
 
     .text-block {
