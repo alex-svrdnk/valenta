@@ -1,0 +1,9 @@
+body{
+
+}
+
+@media (max-width: 767px) {
+    .desc{
+        height: 40vh !important;
+    }
+}
