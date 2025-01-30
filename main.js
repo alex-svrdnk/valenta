@@ -375,6 +375,16 @@ document.querySelectorAll('.copy-val').forEach(_ => {
 //     reviews6EndX = 0;
 // });
 
+function addCarouselClass() {
+    const carousels = document.querySelectorAll('.owl-carousel');
+    if (carousels.length > 0) {
+        const lastCarousel = carousels[carousels.length - 1];
+        lastCarousel.classList.add('sl4c');
+    }
+}
+
+addCarouselClass()
+
 const scrollSections = document.querySelectorAll('.scroll-sect');
 const menu = document.querySelector('.menu');
 function detectCurrentSection() {

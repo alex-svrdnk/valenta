@@ -405,6 +405,18 @@ h2 {
     background: rgba(255, 255, 255, 0.5) !important;
 }
 
+.sl4c .owl-dots .owl-dot {
+    width: 23% !important;
+}
+
+/*.owl-carousel:last-of-type{*/
+/*    .owl-dots{*/
+/*        .owl-dot{*/
+/*            width: 23% !important;*/
+/*        }*/
+/*    }*/
+/*}*/
+
 .active {
     background-color: #fff !important;
 }
@@ -847,11 +859,6 @@ footer {
     }
 }
 
-.owl-dots:last-child{
-    .owl-dot{
-        width: 23%;
-    }
-}
 
 
 
