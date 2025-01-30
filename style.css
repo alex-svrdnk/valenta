@@ -189,7 +189,7 @@ header {
                     height: 52px;
                     /*backdrop-filter: brightness(1.5);*/
                     background: rgba(255, 255, 255, 0.2);
-                    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+                    /*text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);*/
                     font-size: 16px;
                     color: #fff;
                     cursor: pointer;
@@ -847,6 +847,7 @@ section {
 
     h1 {
         font-size: 24px !important;
+        /*text-shadow: 0 0 3px rgba(255, 255, 255, 0.5);*/
     }
 
     .head-slide {
@@ -1311,6 +1312,10 @@ section {
         /* Center the card */
         aspect-ratio: 1 / 1;
         position: relative;
+
+        p{
+            text-align: justify;
+        }
 
         .image-layer {
             position: absolute;
