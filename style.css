@@ -90,8 +90,6 @@ body {
     margin: auto;
     display: flex;
     justify-content: space-between;
-    /*height: 250vh;*/
-
     .wrap {
         width: 100% !important;
     }
@@ -134,24 +132,8 @@ body {
     }
 }
 
-
 .menu.show {
     opacity: 1;
-}
-
-
-.card {
-    h4 {
-        margin: 1rem 0;
-    }
-
-    h5 {
-        margin: 1rem 0;
-        font-weight: 900;
-        font-size: 1.5rem;
-        color: var(--greenText);
-        text-transform: uppercase;
-    }
 }
 
 header {
@@ -317,87 +299,6 @@ h2 {
     }
 }
 
-#horses {
-    .wrap {
-        gap: 1rem;
-        justify-content: space-between;
-    }
-
-    .horse-block {
-        gap: 1rem;
-        display: flex;
-        flex-direction: column;
-        width: 49.5%;
-        flex-wrap: nowrap;
-
-        .text-horse {
-            padding: 1.75rem;
-
-            h3 {
-                color: var(--greenText);
-                font-weight: 700;
-                font-size: 1.25rem;
-                margin: 0.5rem 0;
-                letter-spacing: 0.1em;
-            }
-
-            p {
-                font-weight: 400;
-                font-size: 1rem;
-                letter-spacing: 0.1em;
-            }
-
-            .read-more {
-
-                text-transform: uppercase;
-                font-weight: 300;
-                font-size: 1rem;
-                text-decoration: none;
-                margin-left: auto;
-                text-align: right;
-                color: var(--grayText);
-                display: flex;
-                gap: 0.25rem;
-            }
-
-            .deep-link {
-                display: flex;
-                align-items: center;
-                justify-content: right;
-                margin: 1rem 0;
-            }
-
-            .read-more img {
-                width: 0.5rem;
-            }
-
-            .read-more:after {
-                content: url("assets/icons/chevron_right.svg");
-                background-color: var(--grayText);
-                mask: url("assets/icons/chevron_right.svg") no-repeat center;
-                -webkit-mask: url("assets/icons/chevron_right.svg") no-repeat center;
-                mask-size: contain;
-                -webkit-mask-size: contain;
-            }
-
-            .read-more:hover {
-                color: var(--kBlack);
-                transition: 0.2s ease;
-            }
-        }
-
-        img {
-            width: 100%;
-        }
-
-    }
-
-    .horse-block:nth-child(2) {
-        flex-direction: column-reverse;
-    }
-}
-
-/*owl stuff*/
 .owl-theme .owl-dots .owl-dot span {
     height: 3px;
     border-radius: 0;
@@ -409,21 +310,12 @@ h2 {
     width: 23% !important;
 }
 
-/*.owl-carousel:last-of-type{*/
-/*    .owl-dots{*/
-/*        .owl-dot{*/
-/*            width: 23% !important;*/
-/*        }*/
-/*    }*/
-/*}*/
-
 .active {
     background-color: #fff !important;
 }
 
 .owl-theme .owl-dots .owl-dot {
     width: 30%;
-    /*height: 4px;*/
 }
 
 .owl-theme .owl-nav.disabled + .owl-dots {
@@ -438,231 +330,6 @@ h2 {
 
 .owl-theme .owl-dots .owl-dot span {
     width: 100%;
-}
-
-#meat {
-    .wrap {
-        gap: 1rem;
-        justify-content: space-between;
-    }
-
-    .meat-block {
-        gap: 1rem;
-        display: flex;
-        flex-direction: column;
-        width: 49.5%;
-        flex-wrap: nowrap;
-
-        .text-meat {
-            padding: 1.75rem;
-
-            h3 {
-                color: var(--greenText);
-                font-weight: 700;
-                font-size: 1.25rem;
-                margin: 0.5rem 0;
-                letter-spacing: 0.1em;
-            }
-
-            p {
-                font-weight: 400;
-                font-size: 1rem;
-                letter-spacing: 0.1em;
-            }
-
-            .read-more {
-
-                text-transform: uppercase;
-                font-weight: 300;
-                font-size: 1rem;
-                text-decoration: none;
-                margin-left: auto;
-                text-align: right;
-                color: var(--grayText);
-                display: flex;
-                gap: 0.25rem;
-            }
-
-            .deep-link {
-                display: flex;
-                align-items: center;
-                justify-content: right;
-                margin: 1rem 0;
-            }
-
-            .read-more img {
-                width: 0.5rem;
-            }
-
-            .read-more:after {
-                content: url("assets/icons/chevron_right.svg");
-                background-color: var(--grayText);
-                mask: url("assets/icons/chevron_right.svg") no-repeat center;
-                -webkit-mask: url("assets/icons/chevron_right.svg") no-repeat center;
-                mask-size: contain;
-                -webkit-mask-size: contain;
-            }
-
-            .read-more:hover {
-                color: var(--kBlack);
-                transition: 0.2s ease;
-            }
-        }
-
-        img {
-            width: 100%;
-        }
-
-    }
-
-    .meat-block:nth-child(1) {
-        flex-direction: column-reverse;
-    }
-
-    .card {
-        width: 49% !important;
-
-    }
-}
-
-#events {
-    h2:after {
-        width: 20% !important;
-    }
-
-    h2:before {
-        width: 20% !important;
-    }
-
-    .wrap {
-        gap: 1rem;
-        justify-content: space-between;
-    }
-
-    .event-block {
-        gap: 1rem;
-        display: flex;
-        flex-direction: column;
-        width: 49.5%;
-        flex-wrap: nowrap;
-
-        .text-event {
-            padding: 1.75rem;
-
-            h3 {
-                color: var(--greenText);
-                font-weight: 700;
-                font-size: 1.25rem;
-                margin: 0.5rem 0;
-                letter-spacing: 0.1em;
-            }
-
-            p {
-                font-weight: 400;
-                font-size: 1rem;
-                letter-spacing: 0.1em;
-            }
-
-            .read-more {
-
-                text-transform: uppercase;
-                font-weight: 300;
-                font-size: 1rem;
-                text-decoration: none;
-                margin-left: auto;
-                text-align: right;
-                color: var(--grayText);
-                display: flex;
-                gap: 0.25rem;
-            }
-
-            .deep-link {
-                display: flex;
-                align-items: center;
-                justify-content: right;
-                margin: 1rem 0;
-            }
-
-            .read-more img {
-                width: 0.5rem;
-            }
-
-            .read-more:after {
-                content: url("assets/icons/chevron_right.svg");
-                background-color: var(--grayText);
-                mask: url("assets/icons/chevron_right.svg") no-repeat center;
-                -webkit-mask: url("assets/icons/chevron_right.svg") no-repeat center;
-                mask-size: contain;
-                -webkit-mask-size: contain;
-            }
-
-            .read-more:hover {
-                color: var(--kBlack);
-                transition: 0.2s ease;
-            }
-        }
-
-        img {
-            width: 100%;
-        }
-
-    }
-
-    .event-block:nth-child(2) {
-        flex-direction: column-reverse;
-    }
-
-    .card {
-        width: 49% !important;
-    }
-
-}
-
-.offers {
-    gap: 0.5rem;
-
-    .card {
-        width: 32%;
-        background-color: #ffffff;
-        border-radius: 5px;
-        padding: 3rem 2rem;
-        text-align: center;
-
-        h4,
-        p,
-        button {
-            margin-bottom: 1rem;
-        }
-
-        h4 {
-            font-weight: 700;
-            text-transform: uppercase;
-
-        }
-
-        .btn-wrap {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            .contact-card {
-                display: flex;
-                gap: 0.5rem;
-                vertical-align: center;
-                align-items: center;
-                justify-content: center;
-                padding: 0.5rem 1rem;
-                background: none;
-                border-radius: 5px;
-                cursor: pointer;
-
-            }
-
-        }
-
-
-    }
 }
 
 #learn-more {
@@ -719,15 +386,6 @@ h2 {
                 width: 100%;
                 /*height: 100%;*/
                 filter: brightness(0) saturate(100%) invert(31%) sepia(52%) saturate(446%) hue-rotate(45deg);
-
-                /*mask-image: url("assets/icons/mountain.svg");*/
-                /*!*-webkit-mask-image: url("assets/icons/mountain.svg");*!*/
-                /*background-color: #4F772D;*/
-                /*-webkit-mask-repeat: no-repeat;*/
-                /*mask-repeat: no-repeat;*/
-
-                /*-webkit-mask-size: contain;*/
-                /*mask-size: contain;*/
             }
 
         }
@@ -748,14 +406,12 @@ h2 {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-
         .cc {
             width: 100%;
             border-radius: 5px;
             height: 49%;
             color: #fff;
             text-align: center;
-            /*background-color: var(--greenText);*/
             opacity: 1;
             padding: 4rem 2rem;
 
@@ -805,7 +461,6 @@ h2 {
 
 footer {
     width: 100%;
-    /*height: 600px;*/
     *{
         color: black;
     }
@@ -859,9 +514,6 @@ footer {
     }
 }
 
-
-
-
 .nav-footer-container{
     width: 90%;
     margin: auto;
@@ -875,12 +527,6 @@ section {
 }
 
 
-.info-section {
-    display: none;
-    justify-content: center;
-    align-items: center;;
-}
-
 .info-card {
     position: relative;
     width: 100%;
@@ -891,16 +537,6 @@ section {
     margin-bottom: 1.25rem;
 }
 
-.info-background {
-    /*height: 100%;*/
-}
-
-.info-background img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    filter: brightness(70%);
-}
 
 .info-content {
     position: absolute;
@@ -926,40 +562,6 @@ section {
     text-align: left;
     line-height: 1.5;
 }
-
-/*.info-button {*/
-/*    display: inline-block;*/
-/*    color: white !important;*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*    text-decoration: none;*/
-/*    font-size: 1rem;*/
-/*    padding: 0.5rem 1rem;*/
-/*    background: rgba(255, 255, 255, 0.2);*/
-/*    !* Light button background *!*/
-/*    border-radius: 4px;*/
-/*    transition: background 0.3s ease;*/
-/*}*/
-
-.info-button:hover {
-    background: rgba(255, 255, 255, 0.4);
-}
-
-
-.slider {
-    overflow: hidden;
-    position: relative;
-    max-width: 100%;
-    padding: 50px 200px;
-}
-
-
-.slides {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
 
 .passion {
     min-width: 25%;
@@ -1008,56 +610,8 @@ section {
 
 .passion p {
     font-size: 1rem;
-    line-height: 1.5;
 }
 
-/* Add navigation dots for slider */
-.slider-dots {
-    display: none;
-    justify-content: center;
-    margin-top: 1rem;
-
-}
-
-.slider-dots button {
-    width: 70px;
-    height: 4px;
-    background-color: gray;
-    border: none;
-    border-radius: 0%;
-    margin: 0 5px;
-    cursor: pointer;
-}
-
-.slider-dots .active {
-    background-color: white;
-}
-
-.slides1 {
-    display: flex;
-    gap: 20px;
-
-}
-
-/* Slider container */
-.custom-slider {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-
-    dots {
-        background-color: gray;
-    }
-}
-
-
-/* Slides container */
-.custom-slides {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-/* Individual slide (card) */
 .custom-card {
     flex: 0 0 100%;
     text-align: center;
@@ -1124,18 +678,12 @@ section {
 }
 
 
-.owl-stage:nth-child(1){
-    /*background: linear-gradient(0deg,#283e17 0%, rgba(0,0,0,0) 100%);*/
-}
-
 /* Title */
 .custom-card h4 {
     font-size: 18px;
     font-weight: bold;
     color: #333;
-    /* Dark gray */
     margin-bottom: 8px;
-    /* Space below the title */
 }
 
 /* Price */
@@ -1143,12 +691,9 @@ section {
     font-size: 20px;
     font-weight: bold;
     color: #4caf50;
-    /* Green color */
     margin-bottom: 12px;
-    /* Space below the price */
 }
 
-/* Description */
 .custom-card p {
     font-size: 14px;
     line-height: 1.5;
@@ -1158,28 +703,23 @@ section {
     /* Space below the text */
 }
 
-/* Button Wrapper */
 .custom-btn-wrap {
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
-/* Button Styles */
 .custom-contact-card {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 12px 24px;
     border: 2px solid #333;
-    /* Black border */
     border-radius: 4px;
     background-color: transparent;
-    /* Transparent background */
     font-size: 14px;
     font-weight: bold;
     color: #333;
-    /* Black text */
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -1189,348 +729,9 @@ section {
     /* Space between text and icon */
 }
 
-/* Button Hover Effect */
-.custom-contact-card:hover {
-    background-color: #333;
-    /* Black background on hover */
-    color: #fff;
-    /* White text on hover */
-}
-
-/* Container Styles */
-.new-wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Slider Container */
-.new-slider {
-    position: relative;
-    width: 100%;
-    max-width: 1200px;
-    overflow: hidden;
-    margin: 0 auto;
-}
-
-/* Slides Container */
-.new-slides {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-/* Individual Card */
-.new-card {
-    text-align: center;
-    padding: 20px;
-    border: 1px solid #e6e6e6;
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    margin: 10px;
-    max-width: 100%;
-    /* Matches design */
-    box-sizing: border-box;
-}
-
-/* Icon */
-.new-card img {
-
-    height: auto;
-}
-
-/* Title, Price, and Description */
-.new-card h4 {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 8px;
-}
-
-.new-card h5 {
-    font-size: 20px;
-    font-weight: bold;
-    color: #4caf50;
-    margin-bottom: 12px;
-}
-
-.new-card p {
-    font-size: 14px;
-    line-height: 1.5;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-/* Button */
-.new-btn-wrap {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.new-contact-card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 12px 24px;
-    border: 2px solid #333;
-    border-radius: 4px;
-    background-color: transparent;
-    font-size: 14px;
-    font-weight: bold;
-    color: #333;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.new-contact-card span {
-    margin-right: 8px;
-}
-
-.new-contact-card:hover {
-    background-color: #333;
-    color: #fff;
-}
-
-/* Navigation Dots */
-.new-slider-dots {
-    display: none;
-    justify-content: center;
-    margin-top: 10px;
-
-}
-
-.new-slider-dots button {
-    background: gray;
-    border: none;
-    width: 70px;
-    height: 4px;
-    margin: 0 5px;
-    border-radius: ;
-    cursor: pointer;
-    outline: none;
-    transition: background 0.3s;
-}
-
-.new-slider-dots button.active {
-    background: #000;
-}
 
 
-/* General Styles */
-.slide5-wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.slide5-container {
-    position: relative;
-    width: 100%;
-    max-width: 1200px;
-    overflow: hidden;
-    margin: 0 auto;
-}
-
-/* Slides Container */
-.slide5-slides {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-/* Individual Slide/Card */
-.slide5-card {
-    text-align: center;
-    padding: 20px;
-    border: 1px solid #e6e6e6;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    /* Soft shadow */
-    background-color: #fff;
-    margin: 10px;
-    max-width: 350px;
-    /* Card max width */
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-/* Icon Styling */
-.slide5-card img {
-
-    height: auto;
-}
-
-/* Title */
-.slide5-card h4 {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 5px;
-}
-
-/* Price */
-.slide5-card h5 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #4caf50;
-    /* Green color */
-    margin-bottom: 15px;
-}
-
-/* Description */
-.slide5-card p {
-    font-size: 14px;
-    line-height: 1.6;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-/* Button */
-.slide5-btn-wrap {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.slide5-contact-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 12px 20px;
-    border: 1px solid #333;
-    /* Thin border */
-    border-radius: 6px;
-    background-color: #fff;
-    /* White background */
-    font-size: 14px;
-    font-weight: bold;
-    color: #333;
-    /* Black text */
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.slide5-contact-btn:hover {
-    background-color: #333;
-    /* Black background on hover */
-    color: #fff;
-    /* White text on hover */
-}
-
-/* Container Background and Card Alignment */
-.slide5-container {
-    padding: 20px;
-    border-radius: 12px;
-    /* Rounded corners for container */
-}
-
-/* Dots Container */
-.slide5-dots {
-    display: none;
-    justify-content: center;
-    margin-top: 15px;
-}
-
-.slide5-dots button {
-    background: #ccc;
-    border: none;
-    width: 70px;
-    height: 4px;
-    margin: 0 5px;
-    border-radius: ;
-    cursor: pointer;
-    outline: none;
-    transition: background 0.3s;
-}
-
-.slide5-dots button.active {
-    background: #000;
-    /* Active dot color */
-}
-
-
-/* General Styles */
-.reviews6-slider {
-    padding: 40px 20px;
-    position: relative;
-    font-family: Arial, sans-serif;
-}
-
-.reviews6-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    overflow: hidden;
-    border-radius: 12px;
-}
-
-
-.reviews6-slides {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    gap: 20px;
-}
-
-/* Individual Slide */
-.reviews6-slide {
-    flex: 0 0 100%;
-    height: 400px;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    color: #fff;
-}
-
-/* Dark Overlay */
-.reviews6-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.6);
-    /* Semi-transparent black overlay */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-}
-
-/* Content Wrapper */
-.reviews6-content {
-    text-align: left;
-    max-width: 600px;
-    color: #fff;
-}
-
-.reviews6-stars {
-    font-size: 18px;
-    color: #ffcc00;
-    /* Star color */
-    margin-bottom: 10px;
-}
-
-.reviews6-content h5 {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-}
-
-.reviews6-content p {
-    font-size: 14px;
-    line-height: 1.6;
-    margin-bottom: 10px;
-}
-
-/* Dots Navigation */
-.reviews6-dots {
-    display: none;
-    justify-content: center;
-    margin-top: 15px;
-}
 
 .menu-head {
     width: 100%;
@@ -1554,9 +755,6 @@ section {
 }
 
 .close-nav {
-    /*position: absolute;*/
-    /*top: 1%;*/
-    /*right: 5%;*/
     color: white;
     background: none;
     border: none;
@@ -1566,21 +764,6 @@ section {
     font-size: 20px;
 }
 
-.reviews6-dots button {
-    background: #fff;
-    border: none;
-    width: 70px;
-    height: 4px;
-    margin: 0 5px;
-    border-radius: ;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.reviews6-dots button.active {
-    background: #ffcc00;
-    /* Active dot color */
-}
 
 
 /* Mobile Responsive Styles */
@@ -1589,13 +772,10 @@ section {
    body{
        line-height: 1.5;
        letter-spacing: 0.1em;
-       button, a{
+       button, a, p{
            font-size: 12px !important;
        }
    }
-    p{
-        font-size: 12px !important;
-    }
 
     header {
         height: 100vh;
@@ -1636,7 +816,6 @@ section {
         left: 0;
         width: 100%;
         height: 100%;
-        /*background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);*/
         background: rgba(0, 0, 0, 0);
         background: radial-gradient(circle farthest-corner at right center, rgba(0, 0, 0, 0) 0%, #000000 150%);
         pointer-events: none;
@@ -1652,14 +831,14 @@ section {
     }
 
     .head {
-        position: relative; /* Контент поверх слайдов */
-        z-index: 1; /* Убедимся, что контент выше фона */
+        position: relative;
+        z-index: 1;
         display: flex;
         align-items: center;
         justify-content: center;
         height: 100%;
         text-align: center;
-        color: white; /* Пример: белый текст для контраста */
+        color: white;
     }
 
     .main-section-menu {
