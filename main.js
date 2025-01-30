@@ -386,43 +386,38 @@ function addCarouselClass() {
 addCarouselClass()
 
 const scrollSections = document.querySelectorAll('.scroll-sect');
+console.log(scrollSections);
 const menu = document.querySelector('.menu');
 function detectCurrentSection() {
     let currentSection = null;
+    let maxVisibility = 0;
 
     scrollSections.forEach(section => {
         const rect = section.getBoundingClientRect();
         const sectionHeight = rect.height;
 
+        const visiblePart = Math.max(0, Math.min(window.innerHeight, rect.bottom) - Math.max(0, rect.top));
+        const visibilityRatio = visiblePart / sectionHeight;
 
-        if (rect.top >= 0 && rect.top <= window.innerHeight / 2) {
+        if (visibilityRatio > maxVisibility) {
+            maxVisibility = visibilityRatio;
             currentSection = section;
-        }
-
-
-        if (rect.top < window.innerHeight && rect.bottom > 0) {
-            const sectionVisibility = Math.min(Math.max(0, rect.bottom), window.innerHeight) / sectionHeight;
-            if (sectionVisibility > 0.5) {
-                currentSection = section;
-            }
         }
     });
 
     if (currentSection) {
         const selectedItem = menu.querySelector(`[data-section="${currentSection.id}"]`);
-        menu.querySelectorAll('.item-tab').forEach(_ => _.classList.remove('active-tab'));
-        selectedItem.classList.add('active-tab');
-        menu.querySelectorAll('svg>path').forEach(svg => {
-            svg.setAttribute('fill-opacity', '0.3');
-            // svg.style.fillOpacity = '0.3 !important'
-        });
-        selectedItem.querySelectorAll('svg>path').forEach(_=>{
-            _.setAttribute('stroke-opacity', '1.0');
-        })
+        menu.querySelectorAll('.item-tab').forEach(tab => tab.classList.remove('active-tab'));
 
-        selectedItem.querySelectorAll('svg>path').forEach(_=>{
-            _.setAttribute('fill-opacity', '1.0');
-        })
+        if (selectedItem) {
+            selectedItem.classList.add('active-tab');
+            menu.querySelectorAll('svg>path').forEach(svg => svg.setAttribute('fill-opacity', '0.3'));
+
+            selectedItem.querySelectorAll('svg>path').forEach(_ => {
+                _.setAttribute('stroke-opacity', '1.0');
+                _.setAttribute('fill-opacity', '1.0');
+            });
+        }
     }
 }
 
