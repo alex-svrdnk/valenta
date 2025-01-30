@@ -7,12 +7,68 @@
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <title>Valenta</title>
     <link href="o_nas.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
 <nav>
-    <div class="container m0">
-        <div class="logo"></div>
-        <div class="menu"></div>
+    <div class="container f-c-c">
+        <div class="logo">
+            <img alt="" src="assets/icons/logo.png">
+            <p class="logo-text">valenta</p>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <img src="assets/icons/black-menu.svg" alt="">
+        </div>
+    </div>
+    <div class="nav-elements" id="nav-links">
+        <div class="menu-head dn">
+            <h2 class="">menu</h2>
+            <button class="close-nav">X</button>
+        </div>
+        <ul class="ul-it">
+            <li class="nav-item">główna</li>
+            <li class="nav-item">oferta</li>
+            <li class="nav-item">sklep</li>
+            <li class="nav-item">o nas</li>
+            <li class="nav-item"><a href="o_nas.html">kontakt</a></li>
+        </ul>
+        <div class="lang-block dn">
+            <div class="lang-en lang">EN</div>
+            <div class="lang-pl lang active-lang">PL</div>
+        </div>
+        <div class="nav-footer dn">
+            <div class="copy-container">
+                <div class="nf-address">
+                    <img alt="" src="assets/icons/location.svg">
+                    <div class="nf-text">ul. Marii Konopnickiej <span class="numbers">162a</span>, <br>Kamienica Polska
+                    </div>
+                </div>
+                <img alt="" class="copy-val" data-copy="Adres"
+                     data-value="ul. Marii Konopnickiej 162a, Kamienica Polska" src="assets/icons/copy.svg">
+            </div>
+            <div class="lang-block">
+                <div class="lang l-links">Google Maps <img alt="" src="assets/icons/link.svg"></div>
+                <div class="lang l-links">Jak dojechać?</div>
+            </div>
+            <div class="copy-container">
+                <div class="nf-address">
+                    <img alt="" src="assets/icons/mail.svg">
+                    <div class="nf-text">valenta.contact@gmail.com</div>
+                </div>
+                <img alt="" class="copy-val" data-copy="Email" data-value="valenta.contact@gmail.com"
+                     src="assets/icons/copy.svg">
+            </div>
+            <div class="copy-container">
+                <div class="nf-address">
+                    <img alt="" src="assets/icons/phone.svg">
+                    <div class="nf-text numbers">(+48) 502 785 311</div>
+                </div>
+                <img alt="" class="copy-val" data-copy="Telefon" data-value="+48 502 785 311"
+                     src="assets/icons/copy.svg">
+            </div>
+            <div class="copied"><span id="copied"></span> został skopiowany do schowka</div>
+        </div>
+
     </div>
 </nav>
 <div class="desc">
@@ -79,7 +135,8 @@
                  data-value="ul. Marii Konopnickiej 162a, Kamienica Polska" src="assets/icons/copy.svg">
         </div>
         <div class="lang-block">
-            <div class="lang l-links footer-link"><a href=""><span>Google Maps </span><img alt="" class="gray-satur" src="assets/icons/link.svg"></a>
+            <div class="lang l-links footer-link"><a href=""><span>Google Maps </span><img alt="" class="gray-satur"
+                                                                                           src="assets/icons/link.svg"></a>
             </div>
             <div class="lang l-links footer-link"><a href=""><span>Jak dojechać?</span></a></div>
         </div>
@@ -125,7 +182,7 @@
     </div>
 </div>
 <div class="image-container">
-    <img src="assets/happy.jpg" alt="">
+    <img alt="" src="assets/happy.jpg">
 </div>
 <footer>
     <div class="footer-logo">
@@ -170,5 +227,6 @@
     </div>
 </footer>
 
+<script src="o_nas.js"></script>
 </body>
 </html>
