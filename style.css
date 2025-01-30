@@ -966,57 +966,10 @@ section {
         width: 15% !important;
     }
 
-    .reviews6-dots {
-        display: flex;
-    }
-
-    .reviews6-slides {
-        gap: 0px;
-    }
-
-    .slide5-dots {
-        display: flex !important;
-
-        button {
-            width: 23%;
-        }
-    }
-
-    .slide5-slides {
-        display: flex;
-    }
-
-    .slide5-card {
-        flex: 0 0 auto;
-        max-width: 90%;
-        margin: 20px;
-    }
-
-    .new-slider-slides {
-        display: flex;
-    }
-
-    .new-slider-card {
-        flex: 0 0 auto;
-        /* Cards remain static */
-        max-width: 300px;
-        /* Adjust width for desktop */
-        margin: 20px;
-    }
-
     section {
         scroll-margin-top: 70px;
     }
 
-    .new-slider-dots {
-        display: flex !important;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .new-slides {
-        display: flex;
-    }
 
     #description {
         margin-bottom: 0;
@@ -1024,9 +977,7 @@ section {
 
     .new-card {
         flex: 0 0 auto;
-        /* Cards remain static */
         max-width: 95%;
-        /* Adjust width for desktop */
     }
 
     .custom-slider-dots {
@@ -1339,7 +1290,6 @@ section {
         align-items: center;
         height: 100%;
         width: 100%;
-
         a {
             margin: 1rem 0;
             padding: 1rem 1rem;
@@ -1350,11 +1300,9 @@ section {
             gap: 5px;
             text-decoration: none;
             color: white !important;
-
             span {
                 display: flex;
                 align-items: center;
-
                 img {
                     filter: brightness(0) invert(1) !important;
                 }
