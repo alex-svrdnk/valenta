@@ -1585,6 +1585,14 @@ section {
 
 /* Mobile Responsive Styles */
 @media (max-width: 768px) {
+
+   body{
+       line-height: 1.5;
+       letter-spacing: 0.1em;
+       button, a{
+           font-size: 12px !important;
+       }
+   }
     p{
         font-size: 12px !important;
     }
