@@ -22,6 +22,10 @@
     letter-spacing: 0.1em;
     scroll-behavior: smooth;
 }
+section{
+    margin: 0 !important;
+    padding: 0 !important;
+}
 
 
 @media (max-width: 767px) {
