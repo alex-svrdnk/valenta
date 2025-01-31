@@ -562,6 +562,10 @@ section {
     margin-bottom: 1.25rem;
 }
 
+.text-white{
+    color: #fff !important;
+}
+
 
 .info-content {
     position: absolute;
@@ -573,6 +577,8 @@ section {
     /* Overlay background */
     /*border-radius: 8px;*/
 }
+
+
 
 .info-content h4 {
     font-size: 1rem;
@@ -1449,6 +1455,10 @@ section {
                 }
             font-size: 1rem !important;
         }
+    }
+
+    .adress{
+        margin-bottom: 1.5rem;
     }
 
     .nav-footer {
