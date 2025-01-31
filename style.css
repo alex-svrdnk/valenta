@@ -395,8 +395,9 @@ h2 {
             }
 
             .cp img {
-                width: 100%;
-                /*height: 100%;*/
+                width: 25px;
+                height: 25px;
+                padding-top: 5px;
                 filter: brightness(0) saturate(100%) invert(31%) sepia(52%) saturate(446%) hue-rotate(45deg);
             }
 
@@ -911,7 +912,7 @@ section {
             align-items: center;
             justify-content: center;
             border-top: 2px solid rgba(255, 255, 255, 0.3);
-            padding: 10px 0;
+            padding: 15px 0;
         }
 
         .selected-menu-item {
